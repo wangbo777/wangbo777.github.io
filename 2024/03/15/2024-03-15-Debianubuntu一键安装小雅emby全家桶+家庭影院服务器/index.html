@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Deer new blog">
+    <meta name="keywords" content="Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器, Deer new blog">
     <meta name="description" content="programming study">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Deer new blog</title>
+    <title>Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器 | Deer new blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器</h1>
                 </div>
             </div>
         </div>
@@ -446,7 +446,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-03-30
+                    2024-03-15
                 </div>
                 
 
@@ -467,19 +467,68 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <p>视频教程</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vK421x7eM/?spm_id_from=333.999.0.0">https://www.bilibili.com/video/BV1vK421x7eM/?spm_id_from=333.999.0.0</a></p>
+<p>安装常用软件</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install -y curl wget sudo bash</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>debian默认不能root用户直接登录，我们需要修改下</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/ssh/sshd_config</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>找到并用#注释掉这行</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PermitRootLogin prohibit-password</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<p>新建一行 添加</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PermitRootLogin yes</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>重启服务</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service ssh restart</span><br></pre></td></tr></tbody></table></figure>
+
+<p>一键更新（先更新一下）</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update -y &amp;&amp; apt full-upgrade -y &amp;&amp; apt autoremove -y &amp;&amp; apt autoclean -y</span><br></pre></td></tr></tbody></table></figure>
+
+<p>挂载U盘</p>
+<p>查看挂载情况</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df -h</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Debian 开机自动挂载磁盘</p>
+<p>查看磁盘所有UUID</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo blkid</span><br></pre></td></tr></tbody></table></figure>
+
+<p>编辑/etc/fstab文件, 在文件尾部添加需要挂载磁盘的UUID 并添加一些信息例如 ↓<br><code>UUID=******* /home/h1/ ext4 defaults 0 2</code><br>UUID是磁盘的信息标签, /home/h1是挂载的文件夹, txt4是磁盘格式, defaults 默认.<br>第一个数字：0表示开机不检查磁盘，1表示开机检查磁盘；<br>第二个数字：0表示交换分区，1代表启动分区（Linux），2表示普通分区</p>
+<p>安装docker</p>
+<p>这里用脚本吧，选择一种方式<br>一键脚本（工具箱}<br><code>curl -sS -O https://kejilion.pro/kejilion.sh &amp;&amp; chmod +x kejilion.sh &amp;&amp; ./kejilion.sh</code><br>docker一键脚本<br><code>bash &lt;(curl -sSL https://linuxmirrors.cn/docker.sh)</code></p>
+<p>安装小雅<br>官网地址： <a target="_blank" rel="noopener" href="https://github.com/DDS-Derek/xiaoya-alist">https://github.com/DDS-Derek/xiaoya-alist</a><br><code>bash -c "$(curl -sLk https://ddsrem.com/xiaoya_install.sh)"</code></p>
+<p>需要两个token和一个id<br>短token：<a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/guide/drivers/aliyundrive.html">https://alist.nn.ci/zh/guide/drivers/aliyundrive.html</a><br>长token：<a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/guide/drivers/aliyundrive_open.html">https://alist.nn.ci/zh/guide/drivers/aliyundrive_open.html</a><br>文件夹id：<a target="_blank" rel="noopener" href="https://www.alipan.com/">https://www.alipan.com/</a><br>阿里云盘的资源盘建立一个文件夹，然后填入地址栏中的id</p>
+<p>推荐使用host模式</p>
+<p>web界面<br>http://自己的ip地址:5678/<br>这里是正常的 等的几分钟刷新一下</p>
+<p>emby全家桶</p>
+<ol>
+<li>安装需要的条件：</li>
+</ol>
+<p>1.1. 正确安装小雅Docker版，并可以正常使用。</p>
+<p>1.2. 硬盘空间有160G剩余空间。</p>
+<ol>
+<li>在我们刚刚挂载点硬盘上创建文件夹，例如/home/h1/xiaoyaemby</li>
+<li>使用命令开始安装</li>
+</ol>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -c "$(curl -sLk https://ddsrem.com/xiaoya_install.sh)"</span><br></pre></td></tr></tbody></table></figure>
+
+<p>默认使用官方emby，可自行选择开心版1.3<br>看一下目录是否正确，回车<br>一路回车，开始拉去resilio镜像<br>这里默认早上六点更新同步，自己更改或者默认<br>我这里选择14天</p>
+<ol>
+<li>安装完毕之后，使用2345或者6908端口进行登录emby。<br>例如：<a target="_blank" rel="noopener" href="http://192.168.1.28:2345/">http://192.168.1.28:2345/</a><br>用户名：<code>xiaoya</code><br>密码：<code>1234</code></li>
+</ol>
+<p>阿里云盘缓存清理</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -c "$(curl -sLk https://ddsrem.com/xiaoya_install.sh)"</span><br></pre></td></tr></tbody></table></figure>
+
+<ol>
+<li>xiaoyakeeper</li>
+</ol>
+<p>github地址<br><a target="_blank" rel="noopener" href="https://github.com/DDS-Derek/xiaoya-alist/blob/master/xiaoyahelper/README.md">https://github.com/DDS-Derek/xiaoya-alist/blob/master/xiaoyahelper/README.md</a></p>
+<ol>
+<li>Alist-tvbox</li>
+</ol>
+<p>自带清理缓存文件工具<br>用户名密码都是admin</p>
 
                 
             </div>
@@ -506,7 +555,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wangbo777.github.io/2024/03/30/hello-world/">https://wangbo777.github.io/2024/03/30/hello-world/</a>
+                    <a href="https://wangbo777.github.io/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/">https://wangbo777.github.io/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -711,10 +760,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2024/03/30/hello-world/">
                     <div class="card-image">
@@ -732,9 +780,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-30
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-30
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -743,7 +791,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -751,7 +798,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
                 <a href="/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/">
@@ -781,6 +828,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
