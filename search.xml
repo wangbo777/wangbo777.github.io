@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器</title>
-    <url>/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/03/30/hello-world/</url>
-    <content><![CDATA[]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/03/30/hello-world/"/>
+      <url>/2024/03/30/hello-world/</url>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器</title>
+      <link href="/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <url>/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
