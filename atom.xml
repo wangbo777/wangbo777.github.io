@@ -6,7 +6,7 @@
   <link href="https://wangbo777.github.io/atom.xml" rel="self"/>
   
   <link href="https://wangbo777.github.io/"/>
-  <updated>2024-09-09T06:55:38.167Z</updated>
+  <updated>2024-09-09T07:06:49.224Z</updated>
   <id>https://wangbo777.github.io/</id>
   
   <author>
@@ -17,21 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo</title>
+    <title>hexo搭建博客的几个小问题</title>
     <link href="https://wangbo777.github.io/2024/08/08/hexo%E5%91%BD%E4%BB%A4/"/>
     <id>https://wangbo777.github.io/2024/08/08/hexo%E5%91%BD%E4%BB%A4/</id>
     <published>2024-08-08T14:05:54.000Z</published>
-    <updated>2024-09-09T06:55:38.167Z</updated>
+    <updated>2024-09-09T07:06:49.224Z</updated>
     
-    <content type="html"><![CDATA[<h5 id=""><a href="#" class="headerlink" title=""></a></h5><p>清除掉旧的数据</p><p><a href="">hexo clean</a></p><p>生成新的页面</p><p><a href="">hexo g</a></p><p>本地预览</p><p><a href="">hexo s</a></p><p>部署到Github</p><p><a href="">hexo d</a></p>]]></content>
+    <content type="html"><![CDATA[<h5 id=""><a href="#" class="headerlink" title=""></a></h5><p>清除掉旧的数据</p><p>hexo clean</p><p>生成新的页面</p><p>hexo g</p><p>本地预览</p><p>hexo s</p><p>部署到Github</p><p>hexo d</p><h4 id="所有博客显示未命名-untitled"><a href="#所有博客显示未命名-untitled" class="headerlink" title="所有博客显示未命名(untitled)"></a>所有博客显示未命名(untitled)</h4><p>刚开始写的博客都是通过自己创建MarkDown文件导入到post中的，所以自然没有前缀，解决方式如下即可</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#以如下格式输入相应的字段</span><br><span class="line">---</span><br><span class="line">title: hexo搭建博客的几个小问题</span><br><span class="line">date: 2024-08-08 22:05:54</span><br><span class="line">tags:</span><br><span class="line">---#####正文内容</span><br></pre></td></tr></tbody></table></figure><p>hexo在generate的时候会自动索引当前文件的标题、时间和tags等</p><h4 id="博客首页折叠"><a href="#博客首页折叠" class="headerlink" title="博客首页折叠"></a>博客首页折叠</h4><p>部署后发现首页的文章都是全部预览的，但别人的都是有个<strong>阅读全文</strong>，其实在MD文件中添加一行代码就搞定了</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#####首页显示内容</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">#####隐藏内容</span><br></pre></td></tr></tbody></table></figure><h4 id="hexo部署后，CNAME会被自动删除"><a href="#hexo部署后，CNAME会被自动删除" class="headerlink" title="hexo部署后，CNAME会被自动删除"></a>hexo部署后，CNAME会被自动删除</h4><p>将需要上传至github的内容放在source文件夹，例如CNAME、favicon.ico、images等</p><h4 id="hexo创建新文章"><a href="#hexo创建新文章" class="headerlink" title="hexo创建新文章"></a>hexo创建新文章</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new "your file name"</span><br></pre></td></tr></tbody></table></figure><p>该命令会在source/_post/目录下生成一个your-file-name.md文件，文件会默认附带标题、时间和tag/category等开头，如下：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo搭建博客的几个小问题</span><br><span class="line">date: 2024-08-08 22:05:54</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure><h4 id="hexo创建新的分类"><a href="#hexo创建新的分类" class="headerlink" title="hexo创建新的分类"></a>hexo创建新的分类</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page "your page name"</span><br></pre></td></tr></tbody></table></figure><p>此时需要在scaffolds/post.md文件中添加一行你的分类，例如：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: {{ title }}</span><br><span class="line">date: {{ date }}</span><br><span class="line">tags:</span><br><span class="line">categories: # 添加该行，新增的分类</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure><h4 id="hexo创建草稿"><a href="#hexo创建草稿" class="headerlink" title="hexo创建草稿"></a>hexo创建草稿</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new draft "your draft file name"</span><br></pre></td></tr></tbody></table></figure><p>该命令会在source/下创建一个与**_post<strong>对应的</strong>_draft**文件夹，其中存放待编辑的草稿，而草稿不会影响正常的生成（hexo generate）部署（hexo deploy）</p><h4 id="hexo草稿预览"><a href="#hexo草稿预览" class="headerlink" title="hexo草稿预览"></a>hexo草稿预览</h4><p>如果需要预览草稿可以使用下面的命令进行预览</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server --draft</span><br></pre></td></tr></tbody></table></figure><h4 id="hexo草稿发布"><a href="#hexo草稿发布" class="headerlink" title="hexo草稿发布"></a>hexo草稿发布</h4><p>草稿编写完成后需要生成到public中并且进行部署，使用如下命令即可：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish "your draft file name"</span><br></pre></td></tr></tbody></table></figure>]]></content>
     
     
       
       
     <summary type="html">&lt;h5 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;清除掉旧的数据&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;hexo clean&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;hexo clean&lt;/p&gt;
 &lt;p&gt;生成新的页面&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;hexo </summary>
+&lt;p&gt;hexo g&lt;/p&gt;
+&lt;p&gt;本地预览&lt;/p&gt;
+&lt;p&gt;hexo </summary>
       
     
     
