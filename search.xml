@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器</title>
+    <url>/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hexo入门</title>
     <url>/2024/08/08/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%87%A0%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器</title>
-    <url>/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <title>Hello World</title>
+    <url>/2024/10/23/hello-world/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/10/23/%E3%80%90Bncr%E3%80%91%E6%97%A0%E7%95%8C3%200%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B-Dee/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -17,10 +27,5 @@
       <tags>
         <tag>玩客云</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/10/23/hello-world/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
