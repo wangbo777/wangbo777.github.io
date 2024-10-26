@@ -53,6 +53,25 @@
   </entry>
   
   <entry>
+    <title>如何在HEXO中插入图片</title>
+    <link href="https://wangbo777.github.io/2024/10/02/%E5%A6%82%E4%BD%95%E5%9C%A8HEXO%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
+    <id>https://wangbo777.github.io/2024/10/02/%E5%A6%82%E4%BD%95%E5%9C%A8HEXO%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</id>
+    <published>2024-10-02T13:45:24.000Z</published>
+    <updated>2024-10-26T03:32:18.142Z</updated>
+    
+    <content type="html"><![CDATA[<hr><span id="more"></span><p>在 Hexo 中插入图片有多种方式，具体方法取决于你使用的 Hexo 插件和图片的存储位置。以下是几种常见的方式：</p><ol><li>使用相对路径插入本地图片<br>在 Hexo 的 source 文件夹下，创建一个文件夹（如 images），并将图片放入其中，然后使用 Markdown 语法插入图片：</li></ol><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片描述，可为空](images/your-image.png)</span><br></pre></td></tr></tbody></table></figure><ol start="2"><li>使用 hexo-asset-image 插件插入图片<br>如果希望图片和文章内容一起管理，可以使用 hexo-asset-image 插件，使图片放在每篇文章的同名文件夹中。</li></ol><p>安装插件<br>在你的 Hexo 博客目录中运行：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></tbody></table></figure><p>插入图片<br>在 source/_posts 文件夹中，找到你的 Markdown 文件（如 post-title.md）。</p><p>在同一目录下创建一个同名文件夹 post-title/，然后将图片放入该文件夹。</p><p>使用以下格式插入图片：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">![alt text](post-title/image.png)</span><br></pre></td></tr></tbody></table></figure><ol start="3"><li>使用 URL 链接插入外部图片<br>如果你的图片在外部服务器或图床上，可以直接使用 URL 插入：</li></ol><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt text](https://example.com/path-to-image.png)</span><br></pre></td></tr></tbody></table></figure><ol start="4"><li>使用 hexo-tag-image 插件<br>hexo-tag-image 插件提供了更多自定义选项，比如指定图片的宽度、高度、对齐方式等。</li></ol><p>安装插件</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-image --save</span><br></pre></td></tr></tbody></table></figure><p>插入图片<br>使用如下语法：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% image [class names] /path/to/image [width] [height] [title text [alt text]] %}</span><br></pre></td></tr></tbody></table></figure><p>例如：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% image center https://example.com/image.png 600 400 "Title text" "Alt text" %}</span><br></pre></td></tr></tbody></table></figure><p>每种方法适用于不同的场景，你可以根据需求选择合适的方法。</p>]]></content>
+    
+    
+    <summary type="html">&lt;hr&gt;</summary>
+    
+    
+    
+    
+    <category term="HEXO" scheme="https://wangbo777.github.io/tags/HEXO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于fnos使用root用户登录</title>
     <link href="https://wangbo777.github.io/2024/10/01/2024-10-01-%E5%85%B3%E4%BA%8Efnos%E4%BD%BF%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/"/>
     <id>https://wangbo777.github.io/2024/10/01/2024-10-01-%E5%85%B3%E4%BA%8Efnos%E4%BD%BF%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</id>
