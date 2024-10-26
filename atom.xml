@@ -53,6 +53,25 @@
   </entry>
   
   <entry>
+    <title>关于fnos使用root用户登录</title>
+    <link href="https://wangbo777.github.io/2024/10/01/2024-10-01-%E5%85%B3%E4%BA%8Efnos%E4%BD%BF%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/"/>
+    <id>https://wangbo777.github.io/2024/10/01/2024-10-01-%E5%85%B3%E4%BA%8Efnos%E4%BD%BF%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</id>
+    <published>2024-10-01T13:45:24.000Z</published>
+    <updated>2024-10-26T02:58:56.030Z</updated>
+    
+    <content type="html"><![CDATA[<hr><span id="more"></span><p>首先去web后台打开ssh功能</p><p><img src="/images/fnos/Snipaste_2024-10-26_10-55-09.png"></p><p>用你熟悉的ssh软件登录</p><p>首先输入</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd root  #给root用户创建密码，第一行为登录密码，第二三行是你要创建的root密码</span><br></pre></td></tr></tbody></table></figure><p>显示 psddword updated successfully 表示设置成功</p><p>接着用编辑配置文件</p><p>输入</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/ssh/sshd_config</span><br></pre></td></tr></tbody></table></figure><p>将no 改为yes，ctrl＋o写入，ctrl加x保存，ctrl+y回车退出</p><p><img src="/images/fnos/Snipaste_2024-10-26_10-56-32.png"></p><p>重启ssh服务使其生效</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service sshd restart</span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;hr&gt;</summary>
+    
+    
+    
+    
+    <category term="FnOs" scheme="https://wangbo777.github.io/tags/FnOs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo入门</title>
     <link href="https://wangbo777.github.io/2024/08/08/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%87%A0%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/"/>
     <id>https://wangbo777.github.io/2024/08/08/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%87%A0%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/</id>
