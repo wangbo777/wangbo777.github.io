@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>关于fnos使用root用户登录</title>
-    <url>/2024/10/01/2024-10-01-%E5%85%B3%E4%BA%8Efnos%E4%BD%BF%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>FnOs</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Debian/ubuntu一键安装小雅emby全家桶+家庭影院服务器</title>
     <url>/2024/03/15/2024-03-15-Debianubuntu%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%B0%8F%E9%9B%85emby%E5%85%A8%E5%AE%B6%E6%A1%B6+%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hexo入门</title>
-    <url>/2024/08/08/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%87%A0%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>如何在HEXO中插入图片</title>
-    <url>/2024/10/02/%E5%A6%82%E4%BD%95%E5%9C%A8HEXO%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>HEXO</tag>
-      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -32,11 +11,11 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>玩客云Armbian(CasaOS)使用指南</title>
-    <url>/2024/08/08/%E7%8E%A9%E5%AE%A2%E4%BA%91Armbian(CasaOS)%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <title>关于fnos使用root用户登录</title>
+    <url>/2024/10/01/2024-10-01-%E5%85%B3%E4%BA%8Efnos%E4%BD%BF%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</url>
     <content><![CDATA[]]></content>
       <tags>
-        <tag>玩客云</tag>
+        <tag>FnOs</tag>
       </tags>
   </entry>
   <entry>
@@ -48,8 +27,29 @@
       </tags>
   </entry>
   <entry>
+    <title>如何在HEXO中插入图片</title>
+    <url>/2024/10/02/%E5%A6%82%E4%BD%95%E5%9C%A8HEXO%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>HEXO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo入门</title>
+    <url>/2024/08/08/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%87%A0%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>玩客云Armbian(CasaOS)使用指南</title>
+    <url>/2024/08/08/%E7%8E%A9%E5%AE%A2%E4%BA%91Armbian(CasaOS)%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>玩客云</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>账密登录jd-login-Bncr</title>
-    <url>/2024/08/08/%E8%B4%A6%E5%AF%86%E7%99%BB%E5%BD%95jd-login-Bncr/</url>
+    <url>/2024/10/08/%E8%B4%A6%E5%AF%86%E7%99%BB%E5%BD%95jd-login-Bncr/</url>
     <content><![CDATA[]]></content>
       <tags>
         <tag>Bncr</tag>
